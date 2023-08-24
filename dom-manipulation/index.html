@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>Hello</li>
+        <li>World</li>
+        <li>!!</li>
+    </ul>
+    <table>
+        <tr>
+            <td>one</td>
+            <td>two</td>
+        </tr>
+        <tr>
+            <td>three</td>
+            <td>four</td>
+        </tr>
+    </table>
+    <script>
+        //Root Element
+        console.log("Root Element")
+        console.log(document.documentElement)
+        console.log(document.head)
+        console.log(document.body)
+
+        // Childrens
+        console.log("Childrens")
+        console.log(document.body.children)
+        console.log(document.body.children[0])
+        console.log(document.body.lastElementChild)
+        console.log(document.body.firstElementChild)
+
+        // Siblings
+        console.log("Siblings")
+        console.log(document.body.children[0].nextElementSibling)
+        console.log(document.body.children[1].previousElementSibling)
+        console.log(document.body.children[0].children[1].previousElementSibling.textContent)
+
+        
+
+    </script>
+    
+</body>
+</html>
