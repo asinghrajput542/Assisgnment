@@ -6,10 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <ul>
-        <li>Hello</li>
-        <li>World</li>
-        <li>!!</li>
+    <ul id="list">
+        <li class="list-item">Hello</li>
+        <li class="list-item">World</li>
+        <li class="list-item">!!</li>
     </ul>
     <table>
         <tr>
@@ -41,8 +41,20 @@
         console.log(document.body.children[1].previousElementSibling)
         console.log(document.body.children[0].children[1].previousElementSibling.textContent)
 
-        
+        //Table
+        console.log("Table")
+        console.log(document.body.children[1].tBodies[0].rows[0].cells[0].textContent)
+        console.log(document.body.children[1].tBodies[0].rows[0].cells[1].style = "background-color:blue;")
 
+        // By Id
+        console.log("By Id")
+        console.log(list) //can directly call by id
+        console.log(list.children[1].textContent)
+        console.log(document.getElementById("list"))
+
+        //By className
+        console.log("By className")
+        console.log(document.getElementsByClassName("item-list"))
     </script>
     
 </body>
