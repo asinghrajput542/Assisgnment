@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <ul id="list">
+<body id="body">
+    <ul id="list" type="li" class="list">
         <li class="list-item">Hello</li>
         <li class="list-item">World</li>
         <li class="list-item">!!</li>
@@ -55,6 +55,38 @@
         //By className
         console.log("By className")
         console.log(document.getElementsByClassName("item-list"))
+
+        // QuerySeletor
+        console.log("QuerySeletor")
+        console.log(document.querySelector("ul> li:nth-child(3)").textContent)
+
+        // Attributes
+        console.log("Attributes")
+        console.log(list.getAttribute("type"))
+        console.log(list.setAttribute("subType","l"))
+        console.log(list.getAttribute("subType"))
+        console.log(list.removeAttribute("subType"))
+        console.log(list.getAttribute("subType"))
+        console.log(list.hasAttribute("type"))
+        console.log(list.attributes)
+
+        // Creating and Removing the node elements
+        console.log("Creating and Removing the node elements")
+        const newDiv=document.createElement("div")
+        const newH1=document.createElement("h1").textContent="How you doin..!?"
+        newDiv.append(newH1)
+        body.append(newDiv);
+        body.prepend(newDiv)
+        newDiv.remove()
+        newDiv.innerHTML=`
+        <ul id="list2" type="li2" class="list">
+        <li class="list-item">Hello2</li>
+        <li class="list-item">World2</li>
+        <li class="list-item">!!2</li>
+    </ul>
+        `
+        body.append(newDiv);
+        list.replaceWith(newDiv)
     </script>
     
 </body>
