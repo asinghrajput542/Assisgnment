@@ -7,7 +7,7 @@ type RecipientsDisplayType = {
 
 const RecipientsDisplay = (props: RecipientsDisplayType) => {
   const { recipients } = props;
-  const recipientWidth = 250; 
+  const recipientWidth = 150; 
 
   const [availableWidth, setAvailableWidth] = useState<number>(0)
   const rowRef = useRef<HTMLDivElement>(null);
@@ -20,6 +20,7 @@ const RecipientsDisplay = (props: RecipientsDisplayType) => {
   const trimmedRecipientsCount = recipients.length - visibleRecipients.length;
 
   useEffect(() => {
+    console.log("Hanjiii ",rowRef.current?.offsetParent)
     if (rowRef.current) {
       const CurAvailableWidth = rowRef.current?.offsetWidth;
       setAvailableWidth(CurAvailableWidth)
@@ -56,8 +57,6 @@ export default RecipientsDisplay;
     font-size: 16px;
     color: #333333;
     padding: 5px 10px;
-
   }
   
-
 `
