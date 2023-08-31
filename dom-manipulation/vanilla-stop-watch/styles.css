@@ -1,0 +1,16 @@
+.stop-watch{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: xx-large;
+    height: 20%;
+}
+h3{
+    text-align: center;
+}
+body{
+    height: 100vh;
+}
+.actions>button{
+    cursor: pointer;
+}
