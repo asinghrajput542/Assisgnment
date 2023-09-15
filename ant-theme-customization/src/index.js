@@ -12,7 +12,7 @@ root.render(
       theme={{
         token: {
           // Seed Token global like hover
-          colorPrimary: "#794AFE",
+          // colorPrimary: "#794AFE",
           // colorText: "#794AFE",
           // borderRadius: 10,
           // Alias Token
@@ -27,8 +27,16 @@ root.render(
             colorPrimary: "#794AFE",
           },
           Radio: {
-            colorPrimary: "#EDE2FF",
-            algorithm: true,
+            buttonSolidCheckedBg: "red",
+            // colorText: "#794AFE",
+            // colorBgTextActive: "#794AFE",
+            // colorPrimaryActive: "#794AFE",
+            // colorPrimaryBg: "#794AFE",
+            // colorBgContainer: "#EDE2FF",
+            // colorBgTextActive: "#EDE2FF",
+            // colorPrimaryActive: "#EDE2FF",
+            buttonSolidCheckedColor: "red",
+            // algorithm: true,
           },
           Checkbox: {
             borderRadius: 50,

@@ -11,13 +11,26 @@ function App() {
       <Input placeholder="Please Input" />
       <Button type="primary">Submit</Button>
 
-      <Radio.Group defaultValue="a" size="small" buttonStyle="solid">
+      <Radio.Group
+        defaultValue="a"
+        size="small"
+        buttonStyle="solid"
+        style={{ buttonSolidCheckedActiveBg: "red" }}
+      >
         <Radio.Button value="a">Hangzhou</Radio.Button>
         <Radio.Button value="b">Shanghai</Radio.Button>
         <Radio.Button value="c">Beijing</Radio.Button>
         <Radio.Button value="d">Chengdu</Radio.Button>
       </Radio.Group>
+
       <Checkbox>Checkbox</Checkbox>
+
+      {/* <Radio.Group defaultValue="a">
+        <Radio.Button value="a">Hangzhou</Radio.Button>
+        <Radio.Button value="b">Shanghai</Radio.Button>
+        <Radio.Button value="c">Beijing</Radio.Button>
+        <Radio.Button value="d">Chengdu</Radio.Button>
+      </Radio.Group> */}
     </div>
   );
 }
