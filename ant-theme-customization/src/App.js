@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { Button, Input, Radio, Checkbox } from "antd";
+import { Button, Input, Radio, Checkbox, Space } from "antd";
 
 function App() {
   return (
@@ -31,6 +31,14 @@ function App() {
         <Radio.Button value="c">Beijing</Radio.Button>
         <Radio.Button value="d">Chengdu</Radio.Button>
       </Radio.Group> */}
+
+      <Space.Compact>
+        <Input
+          addonBefore="+91"
+          placeholder="Phone Number"
+          rules={[{ required: true, message: "" }]}
+        />
+      </Space.Compact>
     </div>
   );
 }
